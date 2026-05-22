@@ -202,8 +202,8 @@ MLX_MODEL=divinetribe/Hermes-4-14B-abliterated-4bit-mlx \
 | Model | Quant | Disk | Params | Context | Best for |
 |---|---|---|---|---|---|
 | [`Llama-3.3-70B-Instruct-abliterated-8bit-mlx`](https://huggingface.co/divinetribe/Llama-3.3-70B-Instruct-abliterated-8bit-mlx) | 8-bit, g64 | ~75 GB | 71 B dense | 128 K | Hardest reasoning on 96 GB+ Macs |
-| [`gemma-4-31b-it-abliterated-4bit-mlx`](https://huggingface.co/divinetribe/gemma-4-31b-it-abliterated-4bit-mlx) | 4-bit, g64 | ~16 GB | 31 B dense | 128 K | Daily coding on a 32 GB+ Mac |
-| [`Hermes-4-14B-abliterated-4bit-mlx`](https://huggingface.co/divinetribe/Hermes-4-14B-abliterated-4bit-mlx) | 4-bit, g64 | ~7 GB | 14 B dense (Qwen3 base) | 128 K | 16 GB Macs, instruction-following, tool use |
+| [`gemma-4-31b-it-abliterated-4bit-mlx`](https://huggingface.co/divinetribe/gemma-4-31b-it-abliterated-4bit-mlx) | 4-bit, g64 | ~17 GB | 31 B dense | 128 K | Daily coding on a 32 GB+ Mac |
+| [`Hermes-4-14B-abliterated-4bit-mlx`](https://huggingface.co/divinetribe/Hermes-4-14B-abliterated-4bit-mlx) | 4-bit, g64 | ~8 GB | 14 B dense (Qwen3 base) | 40 K | 16 GB Macs, instruction-following, tool use |
 
 **Abliteration sources:** [huihui-ai](https://huggingface.co/huihui-ai) (Llama, Gemma) and [Babsie](https://huggingface.co/Babsie) (Hermes). MLX conversion + quantization by us — chosen to preserve quality over minimal footprint. See [what abliteration means](https://huggingface.co/blog/mlabonne/abliteration).
 
