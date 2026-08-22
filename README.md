@@ -7,6 +7,7 @@
     <a href="https://github.com/nicedreamzapp/claude-code-local/stargazers"><img src="https://img.shields.io/github/stars/nicedreamzapp/claude-code-local?style=for-the-badge&logo=github&color=f5c542&labelColor=1f2328" alt="GitHub stars"></a>
     <a href="https://github.com/nicedreamzapp/claude-code-local/network/members"><img src="https://img.shields.io/github/forks/nicedreamzapp/claude-code-local?style=for-the-badge&logo=github&color=4c9a2a&labelColor=1f2328" alt="GitHub forks"></a>
     <a href="#-the-lineup--pick-your-fighter"><img src="https://img.shields.io/badge/🥊_Lineup-7_Models-red?style=for-the-badge" alt="7 Models"></a>
+    <a href="https://nicedreamzapp.github.io/agent12/"><img src="https://img.shields.io/badge/🏆_Agent--12-Local_Agent_Leaderboard-gold?style=for-the-badge" alt="Agent-12 leaderboard"></a>
     <a href="#-benchmarks"><img src="https://img.shields.io/badge/⚡_Qwen_3.5-65_tok%2Fs-brightgreen?style=for-the-badge" alt="Qwen 3.5 speed"></a>
     <a href="#-benchmarks"><img src="https://img.shields.io/badge/🚀_Claude_Code_Task-17.6s-blue?style=for-the-badge" alt="Claude Code task time"></a>
     <a href="#-privacy--how-the-data-flows"><img src="https://img.shields.io/badge/🔒_Privacy-100%25_Local-success?style=for-the-badge" alt="100% Local"></a>
@@ -18,6 +19,7 @@
     <a href="#-hit-your-claude-usage-limit">🛑 Usage Limit</a> ·
     <a href="#-what-is-this">🤔 What Is This</a> ·
     <a href="#-quick-start-one-command">🚀 Quick Start</a> ·
+    <a href="#-which-model-should-i-run--the-agent-12-leaderboard">🏆 Leaderboard</a> ·
     <a href="#-the-lineup--pick-your-fighter">🥊 Lineup</a> ·
     <a href="#-the-modes">🎮 Modes</a> ·
     <a href="#-privacy--how-the-data-flows">🔒 Privacy</a> ·
@@ -93,6 +95,24 @@ No internet, no subscription, nobody sees your code — and it's the full Claude
 | [🐳 DeepSeek Three-Way](https://youtu.be/7l8-s8xkpms) | DeepSeek V4 Flash local beats cloud Claude on wall-clock, same MacBook |
 | [🎤 NarrateClaude](https://www.youtube.com/watch?v=4ETqEjjopUk) | Speak to Claude Code, hear replies in a cloned voice — 100% on-device |
 | [🏠 Mac mini as home AI](https://www.youtube.com/watch?v=PLbV4QtFmFY) | Chat with the Mac mini at home from any browser on any phone |
+
+---
+
+## 🏆 Which model should I run? — The Agent-12 Leaderboard
+
+The question every issue here eventually asks. So we measure it. **[Agent-12](https://nicedreamzapp.github.io/agent12/)** runs each local model through real agent tasks in a sandboxed working directory, judged by what ends up on the filesystem, never by the model's prose. Temperature 0, fixed caps, fresh sandbox per task, one variable moved per comparison. Tasks, judges, runner and the judge-validation gate are all open at [github.com/nicedreamzapp/agent12](https://github.com/nicedreamzapp/agent12).
+
+| Model | Easy (12) | time | Hard (8) | time | tok/s |
+|---|:---:|:---:|:---:|:---:|:---:|
+| 🏆 **Qwen3.6-35B-A3B** (MLX 8-bit) | **12/12** | 64s | **8/8** | 125s | 46 |
+| Qwen3-Coder-30B-A3B (MLX 8-bit) | 12/12 | 43s | 7/8 | 392s | 84 |
+| Gemma 4 31B (MLX 4-bit) | 11/12 | 92s | 8/8 | 348s | 26 |
+| DeepSeek V4 Flash (2-bit, 0731 imatrix, `ds4`) | 12/12 | 203s | 8/8 | 551s | 8.4 |
+| *Claude Sonnet 5 (cloud, reference only)* | 12/12 | 122s | 8/8 | 131s | — |
+
+All local rows: Apple M5 Max, 128 GB. The headline: the local champion clears the same hard suite as cloud Claude, and does it **faster on wall-clock** (125s vs 131s) because there is no network in the loop. Read the launch story: [*I took down six of my own benchmark videos, then built the leaderboard*](https://nicedreamzwholesale.com/2026/08/10/i-took-down-six-of-my-own-benchmark-videos-then-i-built-the-local-agent-leaderboard/) · [71-second video](https://youtu.be/O0yWqc46tGM).
+
+New fighters get a row the day they drop. Muse-Glimmer 30B, Qwen 3.8 27B bf16 and Nemotron Omni are next in the queue.
 
 ---
 
@@ -549,7 +569,7 @@ Every one of these landed on hardware I don't own, on a bug I hadn't hit. Thank 
 
 Tested on **Apple M5 Max** with **128 GB unified memory**.
 
-Built by [Matt Macosko](https://x.com/NiceDreamzApps) in Arcata, CA — part of [Nice Dreamz LLC](https://nicedreamzwholesale.com). More open-source at [nicedreamzwholesale.com/software](https://nicedreamzwholesale.com/software/) · demos at [youtube.com/@nicedreamzapps](https://www.youtube.com/@nicedreamzapps).
+Built by [Matt Macosko](https://x.com/NiceDreamzApps) in Arcata, CA — one person, no team, no investors; the MLX server, the [leaderboard](https://nicedreamzapp.github.io/agent12/), the [abliterated uploads](https://huggingface.co/divinetribe), the voice loop and the phone bridge are all his. **Open to work** on local-AI and Apple Silicon inference — matt@ineedhemp.com. Part of [Nice Dreamz LLC](https://nicedreamzwholesale.com). More open-source at [nicedreamzwholesale.com/software](https://nicedreamzwholesale.com/software/) · demos at [youtube.com/@nicedreamzapps](https://www.youtube.com/@nicedreamzapps).
 
 <p>
   <a href="https://x.com/NiceDreamzApps"><img src="https://img.shields.io/badge/X-@NiceDreamzApps-000000?style=flat-square&logo=x&logoColor=white" alt="X"></a>
