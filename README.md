@@ -108,11 +108,12 @@ The question every issue here eventually asks. So we measure it. **[Agent-12](ht
 | Qwen3-Coder-30B-A3B (MLX 8-bit) | 12/12 | 43s | 7/8 | 392s | 84 |
 | Gemma 4 31B (MLX 4-bit) | 11/12 | 92s | 8/8 | 348s | 26 |
 | DeepSeek V4 Flash (2-bit, 0731 imatrix, `ds4`) | 12/12 | 203s | 8/8 | 551s | 8.4 |
+| Qwen3.8-27B (MLX 8-bit, dense) | 12/12 | 351s | 7/8 | 1156s | — |
 | *Claude Sonnet 5 (cloud, reference only)* | 12/12 | 122s | 8/8 | 131s | — |
 
 All local rows: Apple M5 Max, 128 GB. The headline: the local champion clears the same hard suite as cloud Claude, and does it **faster on wall-clock** (125s vs 131s) because there is no network in the loop. Read the launch story: [*I took down six of my own benchmark videos, then built the leaderboard*](https://nicedreamzwholesale.com/2026/08/10/i-took-down-six-of-my-own-benchmark-videos-then-i-built-the-local-agent-leaderboard/) · [71-second video](https://youtu.be/O0yWqc46tGM).
 
-New fighters get a row the day they drop. Muse-Glimmer 30B, Qwen 3.8 27B bf16 and Nemotron Omni are next in the queue.
+Qwen 3.8 reaches 8/8 hard when given an 8000-token budget, but at 16.9× Qwen3.6's wall-clock ([full writeup](https://github.com/nicedreamzapp/agent12/blob/main/writeups/qwen38_vs_qwen36.md)). Muse-Glimmer 30B and Nemotron Omni are listed on the board in a separate **vendor-reported** section with Meta's and NVIDIA's own published numbers, credited and linked, until they get a real Agent-12 run.
 
 ---
 
