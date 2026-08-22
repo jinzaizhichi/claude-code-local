@@ -457,7 +457,7 @@ python3 scripts/test_mlx_server.py
 | Variable | Default | What It Does |
 |----------|---------|-------------|
 | `MLX_MODEL` | `divinetribe/gemma-4-31b-it-abliterated-4bit-mlx` | Pick which fighter to load |
-| `MLX_KV_BITS` | `8` | KV cache quantization bits (4 saves memory, 8 improves coherence) |
+| `MLX_KV_BITS` | `8` | KV cache quantization bits (4 saves memory, 8 improves coherence). Known: `4` can drop ~1 in 14 tool calls with empty arguments, and it gets noisier when prompt-cache reuse is on (see [#42](https://github.com/nicedreamzapp/claude-code-local/issues/42)). Default `8` is unaffected; use `4` only when you need the memory. |
 | `MLX_KV_QUANT_START` | `1024` | Token position where KV quantization begins |
 | `MLX_TOOL_RETRIES` | `2` | Max retries when a garbled tool call is detected |
 | `MLX_MAX_TOKENS` | `8192` | Max output tokens per response |
