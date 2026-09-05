@@ -351,6 +351,7 @@ This is the part we're proudest of. **Your code never leaves your Mac.** Not for
 |-----------|--------|:---:|:---:|
 | **server.py** (ours) | We wrote it line by line | **0** | ✅ Safe |
 | **browser agent** | [nicedreamzapp/browser-agent](https://github.com/nicedreamzapp/browser-agent) — we wrote it | **0** (localhost CDP only) | ✅ Safe |
+| **browser broker** | [nicedreamzapp/browser-broker](https://github.com/nicedreamzapp/browser-broker) — we wrote it | **0** (localhost :9223 only) | ✅ Safe |
 | **mlx-lm** | Apple ML team | **0** | ✅ Safe |
 | **MLX framework** | Apple | **0** | ✅ Safe |
 | **Model weights** | HuggingFace verified repos | **0** at runtime | ✅ Safe |
@@ -512,6 +513,7 @@ Everything above gets you running. These live in [`docs/`](docs/) so this page s
 | 🤖 **claude-code-local** | Brain *(you are here)* | MLX Anthropic server · launcher lineup · tool-call translation |
 | 🎤 [NarrateClaude](https://github.com/nicedreamzapp/NarrateClaude) | Ears + Mouth | Talk to Claude, hear replies in your cloned voice — both directions on-device |
 | 🌐 [browser-agent](https://github.com/nicedreamzapp/browser-agent) | Hands | Drives real Brave via CDP — iframes, Shadow DOM, ProseMirror |
+| 🚦 [browser-broker](https://github.com/nicedreamzapp/browser-broker) | Traffic cop | Leases each agent its own hidden tab in your real browser — many agents, nobody fights, nobody grabs the tab you're reading |
 | 📱 [claude-screen-to-phone](https://github.com/nicedreamzapp/claude-screen-to-phone) | Remote | iPhone → Claude Code over iMessage; text/screenshots/videos back |
 | 🛟 [claude-failover](https://github.com/nicedreamzapp/claude-failover) | Backstop | Keep cloud Claude primary, flip one command to local when limits pinch or Anthropic is down |
 
